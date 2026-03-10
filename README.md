@@ -1,55 +1,52 @@
 # 🍃 Learning Spring Framework | Enterprise Java Development
 ### Developer: Mallu200 | Program: X-Workz Full-Stack Training
 
-This repository is a comprehensive technical archive of my transition from Java Standard Edition to the **Spring Enterprise Ecosystem**. It tracks the evolution of my skills from core dependency management to building robust, high-performance web systems.
-
-
+This repository is a comprehensive technical archive of my transition from Java Standard Edition to the **Spring Enterprise Ecosystem**. It tracks the evolution of my skills from core dependency management to building robust, secure, and production-ready B2B web systems.
 
 ---
 
-## 🏗️ Core Modules & Learning Path
-I have organized my training into specialized modules, each representing a critical pillar of the Spring Framework (Non-Boot/Standard Spring):
+## 🏗️ Project Architecture & Learning Path
+This project serves as a live implementation of the critical pillars of the Spring Framework (Non-Boot/Standard Spring):
 
-### 📁 01-Spring-Core-IOC
-* **IoC Container:** Mastering `ApplicationContext` for centralized bean management.
-* **Dependency Injection:** Practical implementation of Constructor vs. Setter Injection.
-* **Scopes & Lifecycle:** Understanding `Singleton` vs. `Prototype` and bean lifecycle hooks.
+### 🔹 Spring Core & IoC (Inversion of Control)
+* **Bean Management:** Mastering the `ApplicationContext` for centralized and automated object lifecycle management.
+* **Dependency Injection:** Practical implementation of `@Autowired` to decouple business logic from object creation.
+* **Java-Based Configuration:** Transitioning from XML-heavy setups to modern `@Configuration` and `@ComponentScan`.
 
-### 📁 02-Spring-MVC-Web
-* **Front Controller:** Mastering the `DispatcherServlet` workflow and web initialization.
-* **Architecture:** Using `@Controller` for routing and `Model` for data transfer.
-* **Web Setup:** Configuration of `ViewResolvers` and internal resource handlers for static assets.
+### 🔹 Spring MVC (Web Layer)
+* **Front Controller:** Mastering the `DispatcherServlet` workflow for handling complex web request cycles.
+* **View Strategy:** Implementing `InternalResourceViewResolver` with JSP and JSTL for session-aware, dynamic UI rendering.
+* **Asynchronous Integration:** Utilizing **Axios** for real-time email validation and non-blocking OTP triggers.
 
-### 📁 03-Spring-Data-JPA-ORM
-* **Hibernate Integration:** Configuring `LocalContainerEntityManagerFactoryBean` for ORM mapping.
-* **MySQL Persistence:** Transitioned from H2 to **MySQL 8.0** for permanent storage.
-* **Transactions:** Automated commit/rollback management using `@Transactional`.
-
-### 📁 04-Enterprise-Security & Communication
-* **BCrypt Hashing:** Implementing secure, encrypted password storage.
-* **Mail API:** Integration of Google Mail API for automated OTP (One-Time Password) generation and delivery.
+### 🔹 Spring Data JPA & ORM
+* **Hibernate Integration:** Configuring `LocalContainerEntityManagerFactoryBean` to bridge Java objects with relational tables.
+* **MySQL Persistence:** Mapping Entities to **MySQL 8.0** and optimizing data access via the `EntityManager` API.
+* **Transaction Management:** Ensuring data integrity using `@Transactional` for automated commit/rollback logic.
 
 ---
 
 ## 🛡️ Capstone Project: Kick Sports Store
-The **"kick-sports-store"** module represents the culmination of all learning modules into a production-grade Sports Management and E-commerce system.
+The **Kick Sports** module represents the culmination of all Enterprise Java modules into a high-performance Sports Management and E-commerce system.
 
 
 
 ### 🛰️ Project Deep-Dive:
-**Kick Sports** is designed to manage high-volume sports inventory and user authentication with enterprise-grade stability.
+**Kick Sports** is engineered for enterprise-grade stability, focusing on secure user lifecycles and optimized inventory management.
 
-* **Tiered Architecture:** Implements a strict **Controller → Service → Repository → Entity** flow for separation of concerns.
-* **Secure Lifecycle:** Full user lifecycle support including Registration, Login, Forgot Password (OTP), and Password Reset.
-* **Dynamic Profile Management:** Features a "Read-to-Edit" UI toggle with Multipart File upload support for user profile pictures.
-* **Live Validation:** Integrated **Axios** and **AJAX** for real-time email availability checks and asynchronous form processing.
+* **Tiered Architecture:** Follows a strict **Controller → Service → Repository → Entity** flow to ensure complete separation of concerns.
+* **Two-Factor Security:** A secure "Forgot Password" workflow featuring automated **OTP verification** delivered via the **Google Mail API**.
+* **Dynamic Profile Management:** A professional dashboard featuring a "Read-to-Edit" UI toggle and `MultipartFile` support for profile picture uploads with real-time previews.
+* **Data Sanitization:** Implements a tiered **DTO → Entity** architecture, ensuring all data is validated in the service layer before persistence.
 * **Enterprise UI:** A professional, distraction-free **Flat Design** interface utilizing a **Deep Black (#000000)** and **Crimson Red (#8B0000)** palette.
+
+
 
 ---
 
 ## 🛠️ Technical Competencies
 * **Frameworks:** Spring Core, Spring MVC, Spring Mail, Hibernate ORM.
-* **Database:** MySQL 8.0, JPA (Java Persistence API), EntityManager.
+* **Database:** MySQL 8.0, JPA (Java Persistence API), JDBC.
+* **Security:** BCrypt Password Hashing, SMTP-based OTP Verification.
 * **Web Tech:** JSP, JSTL, HTML5, CSS3 (Professional Flat Design), Axios, Bootstrap 5.
 * **Build Tools:** Maven (Dependency & Lifecycle Management), Apache Tomcat 9.0.
 
